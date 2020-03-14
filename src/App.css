@@ -6,12 +6,17 @@
   --mainGrey: #fafafa;
   --darkGrey: #5f5e5e;
   --mainBlack: #222;
+  --mainWhite: #fff;
   --mainTransition: all 0.3s ease-in-out;
   --mainSpacing: 0.3rem;
 
 
 }
-
+a:hover,
+a:focus,
+a:active{
+  text-decoration: none;
+}
 body{
   font-family: 'Roboto', sans-serif!important;
   background: var(--mainGrey)!important;
@@ -27,4 +32,22 @@ body{
 
 .text__main{
   color: var(--primaryColor);
+}
+.main_link{
+  padding: 0.5rem 1rem;
+  background: var(--primaryColor);
+  color: var(--white);
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: var(--mainSpacing);
+  outline:  2px solid var(--primaryColor);
+  outline-offset: 4px;
+  border: none;
+  transition: var(--mainTransition);
+}
+
+.main_link:hover{
+  background: var(--darkGrey);
+  color: var(--primaryColor);
+  outline-color: var(--darkGrey);
 }
